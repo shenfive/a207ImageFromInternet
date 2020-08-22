@@ -16,6 +16,13 @@ class ViewController: UIViewController {
         
         print("Start:\(Date().timeIntervalSince1970)")
         
+        theImageView.clipsToBounds = true
+        theImageView.layer.cornerRadius = 150
+        theImageView.layer.borderColor = UIColor.green.cgColor
+        theImageView.layer.borderWidth = 3
+        
+        
+        
         DispatchQueue.global().async {
             if let url = URL(string: "https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fcw1.tw%2FCW%2Fimages%2Farticle%2FC1386386999309.jpg/?w=1600"){
                 do {
