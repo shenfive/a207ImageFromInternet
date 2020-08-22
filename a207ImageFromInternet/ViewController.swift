@@ -14,22 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("Start:\(Date().timeIntervalSince1970)")
         
-        if let url = URL(string: "https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fcw1.tw%2FCW%2Fimages%2Farticle%2FC1386386999309.jpg/?w=1600"){
-            
-            do {
-                let imageData = try Data(contentsOf: url)
-                theImageView.image = UIImage.init(data: imageData)
-                
-            } catch{
-                print(error.localizedDescription)
+        DispatchQueue.global().async {
+            if let url = URL(string: "https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fcw1.tw%2FCW%2Fimages%2Farticle%2FC1386386999309.jpg/?w=1600"){
+                do {
+                    let imageData = try Data(contentsOf: url)
+                    DispatchQueue.main.async {
+                        self.theImageView.image = UIImage.init(data: imageData)
+                    }
+                } catch{
+                    print(error.localizedDescription)
+                }
             }
-            
-            
-            
-            
-             
         }
+        print("End:\(Date().timeIntervalSince1970)")
+        
+
         
        
         
