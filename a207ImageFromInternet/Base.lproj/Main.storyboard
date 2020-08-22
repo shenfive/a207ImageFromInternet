@@ -15,23 +15,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j8c-vA-276">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mte-AY-63U">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j8c-vA-276">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="PKa-MR-ctS"/>
-                                    <constraint firstAttribute="width" constant="300" id="eyZ-Cl-JCk"/>
+                                    <constraint firstItem="j8c-vA-276" firstAttribute="top" secondItem="mte-AY-63U" secondAttribute="top" id="13f-nn-oow"/>
+                                    <constraint firstItem="j8c-vA-276" firstAttribute="leading" secondItem="mte-AY-63U" secondAttribute="leading" id="RE1-xc-DdO"/>
+                                    <constraint firstAttribute="width" constant="300" id="VAn-r4-W6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="j8c-vA-276" secondAttribute="trailing" id="XY2-7p-nRb"/>
+                                    <constraint firstAttribute="height" constant="300" id="ZwM-G6-KZ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="j8c-vA-276" secondAttribute="bottom" id="udG-oM-elC"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="j8c-vA-276" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Juk-6X-dcD"/>
-                            <constraint firstItem="j8c-vA-276" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RBm-w9-FP6"/>
+                            <constraint firstItem="mte-AY-63U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4U8-dt-e2A"/>
+                            <constraint firstItem="mte-AY-63U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nqu-TV-n5F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cView" destination="mte-AY-63U" id="ZG9-JU-Dmn"/>
                         <outlet property="theImageView" destination="j8c-vA-276" id="HTA-Tc-nsZ"/>
                     </connections>
                 </viewController>

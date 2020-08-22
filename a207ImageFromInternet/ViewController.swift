@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var theImageView: UIImageView!
+    @IBOutlet weak var cView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,15 @@ class ViewController: UIViewController {
         theImageView.layer.cornerRadius = 150
         theImageView.layer.borderColor = UIColor.green.cgColor
         theImageView.layer.borderWidth = 3
+        
+        cView.clipsToBounds = false
+        cView.layer.cornerRadius = 150
+        cView.layer.shadowRadius = 40         //陰影
+        cView.layer.shadowOpacity = 0.8;
+        cView.layer.shadowColor = UIColor.black.cgColor
+        cView.layer.shadowOffset = CGSize(width: 10, height: 10)
+
+        
         
         
         
