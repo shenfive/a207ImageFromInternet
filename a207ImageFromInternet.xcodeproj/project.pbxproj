@@ -13,9 +13,12 @@
 		BAA1326824F0C0700025C8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1326624F0C0700025C8C4 /* Main.storyboard */; };
 		BAA1326A24F0C0720025C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA1326924F0C0720025C8C4 /* Assets.xcassets */; };
 		BAA1326D24F0C0720025C8C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1326B24F0C0720025C8C4 /* LaunchScreen.storyboard */; };
+		F31943B9E07DE2B2B82669D1 /* Pods_a207ImageFromInternet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77854BA25495F1F458291B92 /* Pods_a207ImageFromInternet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77854BA25495F1F458291B92 /* Pods_a207ImageFromInternet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a207ImageFromInternet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21A3374A5A80E1E4A83F981 /* Pods-a207ImageFromInternet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207ImageFromInternet.release.xcconfig"; path = "Target Support Files/Pods-a207ImageFromInternet/Pods-a207ImageFromInternet.release.xcconfig"; sourceTree = "<group>"; };
 		BAA1325D24F0C0700025C8C4 /* a207ImageFromInternet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a207ImageFromInternet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1326024F0C0700025C8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA1326224F0C0700025C8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BAA1326924F0C0720025C8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA1326C24F0C0720025C8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA1326E24F0C0720025C8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58D1657422B2C76BCDE0CB1 /* Pods-a207ImageFromInternet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207ImageFromInternet.debug.xcconfig"; path = "Target Support Files/Pods-a207ImageFromInternet/Pods-a207ImageFromInternet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31943B9E07DE2B2B82669D1 /* Pods_a207ImageFromInternet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7293E8DDD9DC96C4A66DBD28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F58D1657422B2C76BCDE0CB1 /* Pods-a207ImageFromInternet.debug.xcconfig */,
+				A21A3374A5A80E1E4A83F981 /* Pods-a207ImageFromInternet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95305ABD2737EBFB7496C56B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77854BA25495F1F458291B92 /* Pods_a207ImageFromInternet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAA1325424F0C0700025C8C4 = {
 			isa = PBXGroup;
 			children = (
 				BAA1325F24F0C0700025C8C4 /* a207ImageFromInternet */,
 				BAA1325E24F0C0700025C8C4 /* Products */,
+				7293E8DDD9DC96C4A66DBD28 /* Pods */,
+				95305ABD2737EBFB7496C56B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAA1327124F0C0720025C8C4 /* Build configuration list for PBXNativeTarget "a207ImageFromInternet" */;
 			buildPhases = (
+				C39A9C08D2ED6EF8EFC01CB3 /* [CP] Check Pods Manifest.lock */,
 				BAA1325924F0C0700025C8C4 /* Sources */,
 				BAA1325A24F0C0700025C8C4 /* Frameworks */,
 				BAA1325B24F0C0700025C8C4 /* Resources */,
+				94DE9D87FCD00616FD8CD5CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94DE9D87FCD00616FD8CD5CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207ImageFromInternet/Pods-a207ImageFromInternet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207ImageFromInternet/Pods-a207ImageFromInternet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a207ImageFromInternet/Pods-a207ImageFromInternet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39A9C08D2ED6EF8EFC01CB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a207ImageFromInternet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAA1325924F0C0700025C8C4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		BAA1327224F0C0720025C8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58D1657422B2C76BCDE0CB1 /* Pods-a207ImageFromInternet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		BAA1327324F0C0720025C8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21A3374A5A80E1E4A83F981 /* Pods-a207ImageFromInternet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
